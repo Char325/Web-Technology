@@ -1,0 +1,43 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: rgba(24, 4, 139, 0.936);
+    color: rgb(195, 139, 18);
+    background-image: url(https://images.pexels.com/photos/2128249/pexels-photo-2128249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+.all{
+    background-color: aliceblue;
+    width:50%;
+    display:flex;
+    position: absolute;
+    right: 270px;
+    flex-direction: column;
+    border-radius: 5%;
+    
+}
+.forms{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    font-size: medium;
+}
+form{
+    text-align: left;
+}
+input{
+    border-radius: 10%;
+    font-style: italic;
+}
+button{
+    background-color: none;
+    font-family: 'Poppins', sans-serif;
+    border-color:  rgb(195, 139, 18);
+    border-width:1px;
+    border-radius: 10%;
+}
+button:hover{
+    background-color: bisque;
+    color: black;
+}
