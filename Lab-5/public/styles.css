@@ -1,0 +1,61 @@
+body{
+    font-family: 'Libre Baskerville', serif;
+    color:rgba(76, 10, 7, 0.904);
+    background-color: rgb(164, 164, 146);
+}
+.dash{
+    margin: 0%;
+    background-image: url("https://images.pexels.com/photos/762686/pexels-photo-762686.jpeg?auto=compress&cs=tinysrgb&w=650&h=650&dpr=2");
+    position: absolute;
+    left:0px;
+    top:-1px;
+    width: 100%;
+    height: 82%;
+    
+}
+
+.texts{
+    
+    float: left;
+    width:40%;
+    padding-left: 90px;
+}
+h1{
+    font-size: 57px;
+    font-weight: bolder;
+    opacity: 1;
+}
+h3{
+    float: left;
+}
+
+.list{
+    text-align: center;
+    position:absolute;
+    top:570px;
+    left:350px;
+    
+}
+.card{
+    border-radius: 7%;
+    text-align: left;
+    background-color: rgb(132, 111, 80);
+    padding:25px; 
+    position: absolute;
+    width:100%;
+    
+}
+
+td{
+    
+    padding-left: 30px;
+    padding-right: 30px;
+}
+img{
+    width:100px;
+    
+}
+img:hover{
+    width:120px;
+    box-shadow: 3px 3px 5px black;
+}
