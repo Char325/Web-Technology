@@ -1,0 +1,60 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles3.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+rel="stylesheet">
+<title>form</title>
+</head>
+<body >
+<div class="all">
+<h1>Book Club form</h1>
+<div class="forms">
+<form name="bform">
+<label>Book Name:</label>
+<input placeholder="Type here" name="bname">
+<br>
+<label>Author:</label>
+<input placeholder="Type here" name="aname">
+<br>
+<label>ISBN:</label>
+<input placeholder="Type here" name="iname">
+<br>
+<label>Book Review:</label>
+<input placeholder="Type here" name="rname">
+<br>
+<button type="submit" onclick="return clicked()">Submit</button>
+</form>
+</div>
+</div>
+</body>
+<script>
+alert("Welcome! Please fill in the below form about books.");
+function clicked(){
+let rname=document.forms["bform"]["rname"].value;
+let iname=document.forms["bform"]["iname"].value;
+let aname=document.forms["bform"]["aname"].value;
+let bname=document.forms["bform"]["bname"].value;
+if(iname>100 || iname<10){
+iname=prompt("Please enter valid ISBN bw 10 and 100");
+alert("ISBN is: " +iname);
+}
+if(bname===""||aname===""){
+alert("Certain parameters are empty. Please fill them.");
+}
+if(rname.length<10 || rname.length>100){
+alert("Please write the book review for 10-100 words.")
+}
+else{
+let x=confirm("Are you sure?");
+if (x===false){
+return false;
+}
+else{
+alert("Thank you for your review of the book "+bname+",
+ISBN:"+iname+", by author "+aname);
+}
+}
+}
+</script>
+</html>
